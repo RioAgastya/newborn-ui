@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  line-height: normal;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-color: #fff9fb;
+}
+
+nav {
+  padding: 1rem 5rem;
+}
+
+.nav-logo img {
+  width: 16rem;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item {
+  display: flex;
+  gap: 2rem;
+  font-weight: 600;
+}
+
+.nav-item div,
+.nav-item div a {
+  color: black;
+  transition: 0.3s;
+}
+
+.nav-item div:hover,
+.nav-item div a:hover {
+  color: rgb(126, 126, 255);
+}
+
+.landing-text h1 {
+  font-size: 2rem;
+}
+
+.landing-text h1 span {
+  width: fit-content;
+  background-color: #ffc8dd;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.4rem;
+}
+
+.landing-text p {
+  margin-top: 1.5rem;
+  width: 50%;
+  font-weight: 500;
+}
+
+.button-parent {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.button-masuk,
+.button-daftar {
+  background-color: bisque;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  color: white;
+}
+
+#buttonContainer {
+  background: linear-gradient(-74.09deg, #df5d8c, #ffcade);
+}
+#buttonContainer1 {
+  background: linear-gradient(-74.5deg, #94bce1, #bde0fe);
+}
+
+.hero {
+  display: flex;
+  padding: 1rem 8rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.landing-img img {
+  height: 60vh;
+}
+
+.landing {
+  height: 100vh;
+}
+
+.layanan {
+  z-index: 99;
+  position: relative;
+  padding: 4rem 8rem;
+  height: 100vh;
+}
+
+.layanan-title {
+  display: flex;
+  justify-content: center;
+}
+
+.card-box {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 6rem;
+}
+
+.card-layanan {
+  display: flex;
+  z-index: 99;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 1rem;
+  box-shadow: 0px 0px 1rem rgba(92, 92, 92, 0.5);
+  height: 100%;
+  border-radius: 2rem;
+}
+
+.card-layanan h3 {
+  margin: 1rem 0;
+}
+
+.card-layanan img {
+  width: 18rem;
+  height: 14rem;
+}
+.card-layanan p {
+  width: 14rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.flower-1 {
+  position: absolute;
+  z-index: 0;
+  width: 20%;
+  left: -9%;
+  bottom: 0;
+}
+
+.vector-1 {
+  right: 0;
+  z-index: -1;
+  bottom: 20%;
+  position: absolute;
+}
+
+.about {
+  display: flex;
+  padding: 4rem 8rem;
+  align-items: center;
+  height: 100vh;
+}
+
+.about-img img {
+  width: 35rem;
+}
+
+.about-desc {
+  padding-left: 3rem;
+}
+
+.desc-visi,
+.desc-misi {
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  box-shadow: 0px 0px 1rem rgba(92, 92, 92, 0.5);
+}
+
+.desc-misi h3,
+.desc-visi h3 {
+  margin-bottom: 1rem;
+}
+
+.ulasan {
+  height: 70vh;
+  padding: 4rem 8rem;
+  position: relative;
+}
+
+.ulasan-center {
+  width: 100%;
+  height: 10rem;
+  background-color: #94bce1;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ulasan-desc {
+  color: white;
+}
+
+.ulasan-desc p {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.ulasan-rel {
+  width: 16rem;
+  height: 16rem;
+  padding: 2rem 1.5rem;
+  background-color: rgb(255, 250, 250);
+  border-radius: 1rem;
+  box-shadow: 0px 0px 1rem rgba(92, 92, 92, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ulasan-name,
+.ulasan-footer {
+  display: flex;
+  align-items: center;
+}
+
+.ulasan-footer {
+  justify-content: end;
+}
+
+.ulasan-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ulasan-body p {
+  margin-top: 1rem;
+}
+
+.ulasan-head .rating {
+  width: 4rem;
+}
+
+.ulasan-name img {
+  width: 2.5rem;
+}
+.ulasan-name p {
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.ulasan-img {
+  position: absolute;
+  z-index: 0;
+  width: 20rem;
+  right: 10%;
+  bottom: 0;
+}
+
+.analisis {
+  height: 100vh;
+  padding: 4rem 8rem;
+}
+
+.analisis-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.analisis-card {
+  width: 10rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: rgb(255, 250, 250);
+  border-radius: 1rem;
+  box-shadow: 0px 0px 1rem rgba(92, 92, 92, 0.2);
+}
+
+.analisis-card h4 {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.analisis-card-box {
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.analisis img {
+  width: 100%;
+}
