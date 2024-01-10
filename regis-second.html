@@ -35,14 +35,19 @@
                 required>
             </div>
 
-            <button type="submit" class="btn">Selanjutnya</button>
+            <button type="submit" class="btn" id="buttonSelanjutnya">Selanjutnya</button>
 
             <p>Kata sandi harus terdiri dari minimal 8 karakter</p>
            
         </form>
     </div>
     <script>
-        
+    var buttonContainer = document.getElementById("buttonSelanjutnya");
+    if (buttonContainer) {
+        buttonContainer.addEventListener("click", function (e) {
+        window.location.href = "regis-third.html";
+        });
+    }
     </script>
   </body>
 </html>
