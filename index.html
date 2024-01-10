@@ -44,7 +44,7 @@
           </div>
           <div class="button-parent">
             <a class="button-masuk" id="buttonContainer">Masuk</a>
-            <a class="button-daftar" id="buttonContainer1">Daftar</a>
+            <a class="button-daftar" id="buttonContainerDaftar">Daftar</a>
           </div>
         </div>
         <div class="landing-img">
@@ -159,6 +159,20 @@
     </section>
 
     <script>
+      var buttonContainer = document.getElementById("buttonContainer");
+      if (buttonContainer) {
+        buttonContainer.addEventListener("click", function (e) {
+          window.location.href = "login.html";
+        });
+      }
+
+      var buttonContainer = document.getElementById("buttonContainerDaftar");
+      if (buttonContainer) {
+        buttonContainer.addEventListener("click", function (e) {
+          window.location.href = "regis-first.html";
+        });
+      }
+
       var tentangText = document.getElementById("tentangText");
       if (tentangText) {
         tentangText.addEventListener("click", function () {

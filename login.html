@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Born</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+    />
+
+    <link rel="stylesheet" href="./asset/login.css" />
+  </head>
+
+  <body>
+    
+    <div class="wrapper">
+        <form action="">
+            <h1>Selamat Datang <span class="highlight-text">Bunda</span> </h1>
+            <div class="input-box">
+                <input type="text" placeholder="Email"
+                required>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Kata sandi"
+                required>
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Nomor Handphone"
+                required>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Tetap Masuk 
+                </label>
+                <a href="#">Lupa Kata Sandi?</a>
+            </div>
+
+            <button type="submit" class="btn" id="buttonContainer">Login</button>
+
+            <div class="register-link">
+                <p> Belum Punya Akun? <a href="#"> Mari Daftar dan Bergabung</a></p>
+            </div>
+        </form>
+    </div>
+    <script>
+    var buttonContainer = document.getElementById("buttonContainer");
+    if (buttonContainer) {
+        buttonContainer.addEventListener("click", function (e) {
+        window.location.href = "index.html";
+        });
+    }
+    </script>
+  </body>
+</html>
