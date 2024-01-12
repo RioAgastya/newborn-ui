@@ -60,7 +60,7 @@
           <h3 class="name">Dr. Evilia Rachmat</h3>
           <p>Spesialis Anak</p>
           <div class="button-action">
-            <a class="see-profile" href="">Lihat Profile</a>
+            <a class="see-profile" id="buttonProfile">Lihat Profile</a>
             <a class="konsul" href="">Konsultasi</a>
           </div>
         </div>
@@ -69,7 +69,7 @@
           <h3 class="name">Dr. Evilia Rachmat</h3>
           <p>Spesialis Anak</p>
           <div class="button-action">
-            <a class="see-profile" href="">Lihat Profile</a>
+            <a class="see-profile" id="buttonProfile">Lihat Profile</a>
             <a class="konsul" href="">Konsultasi</a>
           </div>
         </div>
@@ -78,7 +78,7 @@
           <h3 class="name">Dr. Evilia Rachmat</h3>
           <p>Spesialis Anak</p>
           <div class="button-action">
-            <a class="see-profile" href="">Lihat Profile</a>
+            <a class="see-profile" id="buttonProfile">Lihat Profile</a>
             <a class="konsul" href="">Konsultasi</a>
           </div>
         </div>
@@ -87,7 +87,7 @@
           <h3 class="name">Dr. Evilia Rachmat</h3>
           <p>Spesialis Anak</p>
           <div class="button-action">
-            <a class="see-profile" href="">Lihat Profile</a>
+            <a class="see-profile" id="buttonProfile">Lihat Profile</a>
             <a class="konsul" href="">Konsultasi</a>
           </div>
         </div>
@@ -100,6 +100,20 @@
       if (buttonContainer) {
         buttonContainer.addEventListener("click", function (e) {
           window.location.href = "profiledokter.html";
+        });
+      }
+
+      var buttonContainer = document.getElementById("konsultasiText");
+      if (buttonContainer) {
+        buttonContainer.addEventListener("click", function (e) {
+          window.location.href = "layanan.html";
+        });
+      }
+
+      var buttonContainer = document.getElementById("berandaText");
+      if (buttonContainer) {
+        buttonContainer.addEventListener("click", function (e) {
+          window.location.href = "index.html";
         });
       }
     </script>
