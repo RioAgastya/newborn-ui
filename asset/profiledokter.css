@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    line-height: normal;
+    background-color: #fff9fb;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  nav {
+    padding: 1rem 5rem;
+  }
+  
+  .nav-logo img {
+    width: 16rem;
+  }
+  
+  .navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav-item {
+    display: flex;
+    gap: 2rem;
+    font-weight: 600;
+  }
+  
+  .nav-item a {
+    color: black;
+    transition: 0.3s;
+  }
+  
+  .nav-item a:hover {
+    color: rgb(126, 126, 255);
+  }
+  
+  .profile-container{
+    display: flex;
+    align-items:unset;
+    margin-top: 50px;
+    border-bottom: 1px solid gray;
+    
+  }
+
+  .profile-pic{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-right: 10px;
+    margin-left: 400px;
+  }
+  
+  .profile-info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+    font-size: larger;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction:row;
+    align-self: flex-start;
+    padding-top: 55px;
+    padding-left: 10px;
+}
+
+.like-button,
+.share-button{
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: rgb(221, 211, 211); /* Warna latar tombol */
+    color: #fff; /* Warna teks tombol */
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.consult-button{
+    background: linear-gradient(to right, rgb(218, 221, 242), #57bde9);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.like-button:hover,
+.share-button:hover {
+    background-color: #0056b3; /* Warna latar tombol saat dihover */
+}
+
+.additional-info{
+    margin: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+.likes, .experience{
+    margin: 0;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.icon{
+    font-size: 15px;
+    margin-right: 5px;
+    color: black;
+}
+
+.additional-text{
+    margin-top: 15px;
+}
+
+.highlight-text{
+    font-weight: 600;
+}
+  
+
+  .flower-1 {
+    position: absolute;
+    background: none;
+    z-index: 0;
+    width: 20%;
+    left: -9%;
+    bottom: 0;
+  }
+  
+  .vector-1 {
+    right: 0;
+    z-index: 0;
+    bottom: 20%;
+    position: absolute;
+    background: none;
+  }
+  
