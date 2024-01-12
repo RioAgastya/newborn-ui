@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Born</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+    />
+    <link rel="stylesheet" href="./asset/regis-first.css" />
+    <link rel="stylesheet" href="./asset/regis-second.css" />
+    <link rel="stylesheet" href="./asset/regis-third.css" />
+    <style>
+        .d-none {
+            display: none;
+        }
+
+        .mb {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <form id="registrationform">
+            <h2 style="color: red;" id="errmessage"></h2>
+            <div id="firststep">
+                <h1>Mari Bergabung <span class="highlight-text">Bunda</span> </h1>
+                <p>Buat akun dahulu untuk bergabung dengan kami</p>
+                <div class="input-box">
+                    <input type="text" placeholder="Email" name="uemail" id="uemail"
+                    required>
+                </div>
+            </div>
+
+            <div id="secondstep" class="d-none">
+                <h1>Detail Akun <span class="highlight-text">Anda</span> </h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Nama Lengkap" name="ufullname" id="ufullname"
+                    required>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Nama Panggilan" name="unickname" id="unickname"
+                    required>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" autocomplete="off" placeholder="Kata sandi" name="upass" id="upass"
+                    required>
+                </div>
+            </div>
+
+            <div id="thirdstep" class="d-none">
+                <h1>Data Pribadi <span class="highlight-text">Anda</span> </h1>
+                <div class="input-box">
+                    <input type="date" placeholder="Tanggal Lahir" name="udob" name="udob"
+                    required>
+                </div>
+                
+                <div class="input-box">
+                    <input type="text" placeholder="Nomor Handphone" name="uhp" id="uhp"
+                    required>
+                </div>
+
+                <p>Jenis Kelamin</p>
+
+                <div class="remember-forgot">
+                    <label><input type="radio" name="ugender" id="gmale" value="pria" checked> Pria 
+                    </label>
+                    <label><input type="radio" name="ugender" id="gfemale" value="wanita"> Wanita
+                    </label>
+                </div>
+            </div>
+
+            <button type="button" class="btn mb" id="nextbtn">Selanjutnya</button>
+            <button type="submit" class="btn mb d-none" id="registerbtn">Daftar</button>
+            <button type="button" class="btn mb d-none" id="backbtn">Kembali</button>
+        </form>
+    </div>
+    <script>
+        const form = document.querySelector('#registrationform');
+        const firstStepElem = document.querySelector('#firststep');
+        const secondStepElem = document.querySelector('#secondstep');
+        const thirdStepElem = document.querySelector('#thirdstep');
+        const backBtn = document.querySelector('#backbtn');
+        const nextBtn = document.querySelector('#nextbtn');
+        const registerBtn = document.querySelector('#registerbtn');
+        const errmessage = document.querySelector('#errmessage');
+
+        const reginfo = {
+            uemail: '',
+            ufullname: '',
+            unickname: '',
+            upass: '',
+            udob: '',
+            uhp: '',
+            ugender: ''
+        }
+
+        let regstep = 1;
+
+        function stepHandler() {
+            if (regstep === 1) {
+                backBtn.classList.add('d-none');
+                nextBtn.classList.remove('d-none');
+                registerBtn.classList.add('d-none');
+                firstStepElem.classList.remove('d-none');
+                secondStepElem.classList.add('d-none');
+                thirdStepElem.classList.add('d-none');
+            } else if (regstep === 2) {
+                backBtn.classList.remove('d-none');
+                nextBtn.classList.remove('d-none');
+                registerBtn.classList.add('d-none');
+                firstStepElem.classList.add('d-none');
+                secondStepElem.classList.remove('d-none');
+                thirdStepElem.classList.add('d-none');
+            } else {
+                backBtn.classList.remove('d-none');
+                nextBtn.classList.add('d-none');
+                registerBtn.classList.remove('d-none');
+                firstStepElem.classList.add('d-none');
+                secondStepElem.classList.add('d-none');
+                thirdStepElem.classList.remove('d-none');
+            }
+        }
+
+        backBtn.addEventListener('click', () => {
+            regstep -= regstep === 1 ? 0 : 1;
+            stepHandler();
+            // console.log('back',regstep);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            regstep += regstep === 3 ? 0 : 1;
+            stepHandler();
+            // console.log('next',regstep);
+        });
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            reginfo.uemail = e.target.uemail.value.trim();
+            reginfo.ufullname = e.target.ufullname.value.trim();
+            reginfo.unickname = e.target.unickname.value.trim();
+            reginfo.upass = e.target.upass.value.trim();
+            reginfo.udob = e.target.udob.value.trim();
+            reginfo.uhp = e.target.uhp.value.trim();
+            reginfo.ugender = e.target.ugender.value;
+
+            // console.log(reginfo)
+
+            const reginfovals = Object.values(reginfo);
+
+            for (val of reginfovals) {
+                if (val.trim() === '') {
+                    errmessage.textContent = 'Isi semua kolom registrasi!'
+                    break;
+                }
+            }
+
+            const response = await fetch('register-auth.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(reginfo),
+            });
+            const result = await response.json();
+            // console.log(result);
+
+            if (!result.success) {
+                errmessage.textContent = result.message;
+                // alert(body.message);
+            } else {
+                location.href = 'index.html';
+            }
+        });
+    </script>
+</body>
+</html>
