@@ -42,8 +42,8 @@
           <h3 class="name">Dr. Evilia Rachmat</h3>
           <p>Spesialis Anak</p>
           <div class="button-action">
-            <a class="see-profile" href="">Lihat Profile</a>
-            <a class="konsul" href="">Konsultasi</a>
+            <a class="see-profile" id="buttonProfile">Lihat Profile</a>
+            <a class="konsul" href="#">Konsultasi</a>
           </div>
         </div>
         <div class="card-box" data-aos="fade-right" data-aos-delay="200">
@@ -51,7 +51,7 @@
           <h3 class="name">Dr. Evilia Rachmat</h3>
           <p>Spesialis Anak</p>
           <div class="button-action">
-            <a class="see-profile" href="">Lihat Profile</a>
+            <a class="see-profile" id="buttonProfile">Lihat Profile</a>
             <a class="konsul" href="">Konsultasi</a>
           </div>
         </div>
@@ -96,6 +96,12 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+      var buttonContainer = document.getElementById("buttonProfile");
+      if (buttonContainer) {
+        buttonContainer.addEventListener("click", function (e) {
+          window.location.href = "profiledokter.html";
+        });
+      }
     </script>
   </body>
 </html>
