@@ -19,19 +19,21 @@
   <body>
     
     <div class="wrapper">
-        <form action="">
+        <!-- <form id="loginform" action="login-auth.php" method="POST"> -->
+        <form id="loginform">
             <h1>Selamat Datang <span class="highlight-text">Bunda</span> </h1>
+            <h2 style="color: red;" id="errmessage"></h2>
             <div class="input-box">
-                <input type="text" placeholder="Email"
+                <input type="text" placeholder="Email" name="uemail" id="uemail"
                 required>
             </div>
             <div class="input-box">
-                <input type="password" placeholder="Kata sandi"
+                <input type="password" autocomplete="off" placeholder="Kata sandi" name="upass" id="upass"
                 required>
             </div>
 
             <div class="input-box">
-                <input type="number" placeholder="Nomor Handphone"
+                <input type="text" placeholder="Nomor Handphone" name="uhp" id="uhp"
                 required>
             </div>
 
@@ -41,7 +43,7 @@
                 <a href="#">Lupa Kata Sandi?</a>
             </div>
 
-            <button type="submit" class="btn" id="buttonContainer">Login</button>
+            <button type="submit" class="btn" name="loginsubmit" id="buttonContainer">Login</button>
 
             <div class="register-link">
                 <p> Belum Punya Akun? <a href="#"> Mari Daftar dan Bergabung</a></p>
@@ -49,12 +51,45 @@
         </form>
     </div>
     <script>
-    var buttonContainer = document.getElementById("buttonContainer");
-    if (buttonContainer) {
-        buttonContainer.addEventListener("click", function (e) {
-        window.location.href = "index.html";
+    // var buttonContainer = document.getElementById("buttonContainer");
+    // if (buttonContainer) {
+    //     buttonContainer.addEventListener("click", function (e) {
+    //         window.location.href = "index.html";
+    //     });
+    // }
+
+    const form = document.querySelector('#loginform');
+    const errmessage = document.querySelector('#errmessage');
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        // console.log('login submit')
+
+        const uemail = e.target.uemail.value.trim();
+        const upass = e.target.upass.value.trim();
+        const uhp = e.target.uhp.value.trim();
+
+        if (uemail === '' || upass === '' || uhp === '') {
+            errmessage.textContent = 'Email/Password/No HP masih kosong';
+            return;
+        }
+
+        const response = await fetch('login-auth.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ uemail, upass, uhp }),
         });
-    }
+        const result = await response.json();
+        // console.log(result);
+
+        if (!result.success) {
+            errmessage.textContent = result.message;
+            // alert(body.message);
+        } else {
+            location.href = 'index.html';
+        }
+
+    });
     </script>
   </body>
 </html>
