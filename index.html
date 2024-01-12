@@ -14,6 +14,7 @@
     />
 
     <link rel="stylesheet" href="./asset/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <section class="landing">
@@ -33,7 +34,7 @@
         </div>
       </nav>
 
-      <section class="hero">
+      <section class="hero" data-aos="fade-up">
         <div>
           <div class="landing-text">
             <h1>Solusi Kesehatan <span>Buah Hati</span></h1>
@@ -54,36 +55,46 @@
     </section>
 
     <section class="layanan">
-      <div class="layanan-title">
+      <div class="layanan-title" data-aos="fade-up">
         <h2>Layanan Kami</h2>
       </div>
       <div class="card-box">
-        <div class="card-layanan">
+        <div class="card-layanan" data-aos="fade-right" data-aos-delay="100">
           <img src="./public/rectangle-4143@2x.png" alt="" />
           <h3>Konsultasi dengan Dokter</h3>
           <p>Konsultasi dengan dokter lewat chat, untuk penanganan tepat</p>
         </div>
-        <div class="card-layanan">
+        <div class="card-layanan" data-aos="fade-right" data-aos-delay="300">
           <img src="./public/rectangle-4144@2x.png" alt="" />
           <h3>Buat janji dengan Dokter</h3>
           <p>Buat Janji dengan dokter, agar lebih cepat daripada mengantri.</p>
         </div>
-        <div class="card-layanan">
+        <div class="card-layanan" data-aos="fade-right" data-aos-delay="500">
           <img src="./public/rectangle-4145@2x.png" alt="" />
           <h3>Tanya resep dengan Dokter</h3>
           <p>Bingung mau pilih obat mana yang cocok ? Tanya aja ke dokter.</p>
         </div>
-        <img class="flower-1" src="./public/flower-1@2x.png" alt="" />
-        <img class="vector-1" src="./public/vector-14@2x.png" alt="" />
+        <img
+          class="flower-1"
+          src="./public/flower-1@2x.png"
+          alt=""
+          data-aos="fade-right"
+        />
+        <img
+          class="vector-1"
+          src="./public/vector-14@2x.png"
+          alt=""
+          data-aos="fade-left"
+        />
       </div>
     </section>
 
     <section class="about" data-scroll-to="aboutContainer">
       <div class="about-img">
-        <img src="public/about.png" alt="" />
+        <img src="public/about.png" alt="" data-aos="zoom-out" />
       </div>
       <div class="about-desc">
-        <div class="desc-visi">
+        <div class="desc-visi" data-aos="fade-left" data-aos-delay="100">
           <h3>Visi Kami</h3>
           <p>
             Menjadi penyedia layanan kesehatan bayi online terdepan yang
@@ -92,7 +103,7 @@
             pelayanan yang ramah, informatif, dan mudah diakses.
           </p>
         </div>
-        <div class="desc-misi">
+        <div class="desc-misi" data-aos="fade-left" data-aos-delay="300">
           <h3>Misi Kami</h3>
           <p>
             Memberikan akses yang mudah dan aman kepada para orang tua untuk
@@ -105,8 +116,8 @@
     </section>
 
     <section class="ulasan">
-      <div class="ulasan-center">
-        <div class="ulasan-rel">
+      <div class="ulasan-center" data-aos="fade-left">
+        <div class="ulasan-rel" data-aos="zoom-out" data-aos-delay="300">
           <div class="ulasan-head">
             <div class="ulasan-name">
               <img src="/public/avatar@2x.png" alt="" />
@@ -130,34 +141,47 @@
           <p>Begini kata mereka</p>
         </div>
       </div>
-      <img class="ulasan-img" src="public/daisy-1@2x.png" alt="" />
+      <img
+        class="ulasan-img"
+        src="public/daisy-1@2x.png"
+        alt=""
+        data-aos="fade-left"
+      />
     </section>
 
     <section class="analisis" data-scroll-to="analisisContainer">
-      <div class="analisis-title">
+      <div class="analisis-title" data-aos="fade-down">
         <h2>Analisis Kesehatan</h2>
         <p>Kesehatan bayi di dunia</p>
       </div>
       <div class="analisis-card-box">
-        <div class="analisis-card">
+        <div class="analisis-card" data-aos="fade-left" data-aos-delay="100">
           <p>Baby Blues</p>
           <h4>25%</h4>
           <p>+12%</p>
         </div>
-        <div class="analisis-card">
+        <div class="analisis-card" data-aos="fade-left" data-aos-delay="300">
           <p>Baby Blues</p>
           <h4>25%</h4>
           <p>+12%</p>
         </div>
-        <div class="analisis-card">
+        <div class="analisis-card" data-aos="fade-left" data-aos-delay="500">
           <p>Baby Blues</p>
           <h4>25%</h4>
           <p>+12%</p>
         </div>
       </div>
-      <img src="public/container.png" alt="" />
+      <img
+        src="public/container.png"
+        alt=""
+        data-aos="fade-up"
+        data-aos-delay="500"
+      />
     </section>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script>
       var tentangText = document.getElementById("tentangText");
       if (tentangText) {
