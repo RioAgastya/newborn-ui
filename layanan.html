@@ -41,54 +41,10 @@
           <img src="public/avatar@2x.png" alt="" />
           <h3 class="name">Dr. Evilia Rachmat</h3>
           <p>Spesialis Anak</p>
+          <h3>Rp. 50.000/sesi</h3>
           <div class="button-action">
-            <a class="see-profile" href="">Lihat Profile</a>
-            <a class="konsul" href="">Konsultasi</a>
-          </div>
-        </div>
-        <div class="card-box" data-aos="fade-right" data-aos-delay="200">
-          <img src="public/avatar@2x.png" alt="" />
-          <h3 class="name">Dr. Evilia Rachmat</h3>
-          <p>Spesialis Anak</p>
-          <div class="button-action">
-            <a class="see-profile" href="">Lihat Profile</a>
-            <a class="konsul" href="">Konsultasi</a>
-          </div>
-        </div>
-        <div class="card-box" data-aos="fade-right" data-aos-delay="300">
-          <img src="public/avatar@2x.png" alt="" />
-          <h3 class="name">Dr. Evilia Rachmat</h3>
-          <p>Spesialis Anak</p>
-          <div class="button-action">
-            <a class="see-profile" href="">Lihat Profile</a>
-            <a class="konsul" href="">Konsultasi</a>
-          </div>
-        </div>
-        <div class="card-box" data-aos="fade-right" data-aos-delay="400">
-          <img src="public/avatar@2x.png" alt="" />
-          <h3 class="name">Dr. Evilia Rachmat</h3>
-          <p>Spesialis Anak</p>
-          <div class="button-action">
-            <a class="see-profile" href="">Lihat Profile</a>
-            <a class="konsul" href="">Konsultasi</a>
-          </div>
-        </div>
-        <div class="card-box" data-aos="fade-right" data-aos-delay="500">
-          <img src="public/avatar@2x.png" alt="" />
-          <h3 class="name">Dr. Evilia Rachmat</h3>
-          <p>Spesialis Anak</p>
-          <div class="button-action">
-            <a class="see-profile" href="">Lihat Profile</a>
-            <a class="konsul" href="">Konsultasi</a>
-          </div>
-        </div>
-        <div class="card-box" data-aos="fade-right" data-aos-delay="600">
-          <img src="public/avatar@2x.png" alt="" />
-          <h3 class="name">Dr. Evilia Rachmat</h3>
-          <p>Spesialis Anak</p>
-          <div class="button-action">
-            <a class="see-profile" href="">Lihat Profile</a>
-            <a class="konsul" href="">Konsultasi</a>
+            <a class="see-profile" href="#" id="buttonProfile">Lihat Profile</a>
+            <a class="konsul" href="#">Konsultasi</a>
           </div>
         </div>
       </div>
@@ -96,6 +52,26 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+      var buttonContainer = document.getElementById("buttonProfile");
+      if (buttonContainer) {
+        buttonContainer.addEventListener("click", function (e) {
+          window.location.href = "profiledokter.html";
+        });
+      }
+
+      var buttonContainer = document.getElementById("konsultasiText");
+      if (buttonContainer) {
+        buttonContainer.addEventListener("click", function (e) {
+          window.location.href = "layanan.html";
+        });
+      }
+
+      var buttonContainer = document.getElementById("berandaText");
+      if (buttonContainer) {
+        buttonContainer.addEventListener("click", function (e) {
+          window.location.href = "index.html";
+        });
+      }
     </script>
   </body>
 </html>
