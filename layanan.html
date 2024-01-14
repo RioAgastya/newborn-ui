@@ -44,7 +44,7 @@
           <h3>Rp. 50.000/sesi</h3>
           <div class="button-action">
             <a class="see-profile" href="#" id="buttonProfile">Lihat Profile</a>
-            <a class="konsul" href="#">Konsultasi</a>
+            <a class="konsul" href="#" id="buttonPayment">Konsultasi</a>
           </div>
         </div>
       </div>
@@ -56,6 +56,13 @@
       if (buttonContainer) {
         buttonContainer.addEventListener("click", function (e) {
           window.location.href = "profiledokter.html";
+        });
+      }
+
+      var buttonContainer = document.getElementById("buttonPayment");
+      if (buttonContainer) {
+        buttonContainer.addEventListener("click", function (e) {
+          window.location.href = "payment.html";
         });
       }
 

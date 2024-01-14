@@ -1,0 +1,267 @@
+.payment {
+    background-color: #fff9fb;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    }
+    .payment .overlap-group-wrapper {
+    background-color: #fff9fb;
+    overflow: hidden;
+    width: 1512px;
+    height: 982px;
+    }
+    .payment .overlap-group {
+    position: relative;
+    width: 1921px;
+    height: 836px;
+    top: 62px;
+    left: -184px;
+    }
+    .payment .graphic {
+    position: absolute;
+    width: 1921px;
+    height: 836px;
+    top: 0;
+    left: 0;
+    }
+    .payment .vector {
+    position: absolute;
+    width: 228px;
+    height: 295px;
+    top: 543px;
+    left: 1468px;
+    }
+
+    .payment .img {
+    position: absolute;
+    width: 206px;
+    height: 195px;
+    top: 605px;
+    left: 308px;
+    }
+    .payment .vector-2 {
+    position: absolute;
+    width: 31px;
+    height: 30px;
+    top: 792px;
+    left: 516px;
+    }
+    .payment .daisy {
+    position: absolute;
+    width: 154px;
+    height: 154px;
+    top: 38px;
+    left: 1404px;
+    object-fit: cover;
+    }
+    .payment .content {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: absolute;
+    top: 45px;
+    left: 476px;
+    }
+    .payment .doctor {
+    display: inline-flex;
+    align-items: center;
+    gap: 36px;
+    padding: 20px 40px 20px 20px;
+    background-color: #ffffff;
+    border-radius: 45px;
+    position: relative;
+    flex: 0 0 auto;
+    overflow: hidden;
+    box-shadow: 0px 0.44px 1.59px #00000004, 0px 1px 3.62px #00000006, 0px 1.73px 6.31px #00000008,
+    0px 2.75px 10.02px #00000009, 0px 4.25px 15.46px #0000000a, 0px 6.63px 24.12px #0000000c,
+    0px 11.01px 40.04px #0000000e, 0px 22px 80px #00000012;
+    }
+    .payment .foto {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+    background-image: url(./img/foto.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    }
+    .payment .nama {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    }
+    .payment .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--sub-title-font-family);
+    font-weight: var(--sub-title-font-weight);
+    color: #000000;
+    font-size: var(--sub-title-font-size);
+    letter-spacing: var(--sub-title-letter-spacing);
+    line-height: var(--sub-title-line-height);
+    white-space: nowrap;
+    font-style: var(--sub-title-font-style);
+    }
+    .payment .div {
+    position: relative;
+    width: fit-content;
+    font-family: var(--body-font-family);
+    font-weight: var(--body-font-weight);
+    color: #000000;
+    font-size: var(--body-font-size);
+    letter-spacing: var(--body-letter-spacing);
+    line-height: var(--body-line-height);
+    white-space: nowrap;
+    font-style: var(--body-font-style);
+    }
+    .payment .total-tagihan {
+    flex-direction: column;
+    height: 200px;
+    gap: 36px;
+    padding: 26px 46px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0px 0.44px 1.59px #00000004, 0px 1px 3.62px #00000006, 0px 1.73px 6.31px #00000008,
+    0px 2.75px 10.02px #00000009, 0px 4.25px 15.46px #0000000a, 0px 6.63px 24.12px #0000000c,
+    0px 11.01px 40.04px #0000000e, 0px 22px 80px #00000012;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    }
+    .payment .div-2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    }
+    .payment .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--body-title-font-family);
+    font-weight: var(--body-title-font-weight);
+    color: #000000;
+    font-size: var(--body-title-font-size);
+    letter-spacing: var(--body-title-letter-spacing);
+    line-height: var(--body-title-line-height);
+    white-space: nowrap;
+    font-style: var(--body-title-font-style);
+    }
+    .payment .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--body-font-family);
+    font-weight: var(--body-font-weight);
+    color: #000000;
+    font-size: var(--body-font-size);
+    letter-spacing: var(--body-letter-spacing);
+    line-height: var(--body-line-height);
+    white-space: nowrap;
+    font-style: var(--body-font-style);
+    }
+    .payment .line {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+    margin-left: -0.5px;
+    margin-right: -0.5px;
+    object-fit: cover;
+    }
+    .payment .total {
+    justify-content: space-between;
+    flex: 0 0 auto;
+    margin-bottom: -1px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    }
+    .payment .doctor-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
+    padding: 36px 46px;
+    align-self: stretch;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-radius: 40px;
+    border: 10px solid;
+    border-color: #ffffff;
+    position: relative;
+    flex: 0 0 auto;
+    overflow: hidden;
+    box-shadow: 0px 0.44px 1.59px #00000004, 0px 1px 3.62px #00000006, 0px 1.73px 6.31px #00000008,
+    0px 2.75px 10.02px #00000009, 0px 4.25px 15.46px #0000000a, 0px 6.63px 24.12px #0000000c,
+    0px 11.01px 40.04px #0000000e, 0px 22px 80px #00000012;
+    }
+    .payment .text-wrapper-4 {
+    position: relative;
+    width: fit-content;
+    margin-top: -10px;
+    font-family: var(--body-title-font-family);
+    font-weight: var(--body-title-font-weight);
+    color: #000000;
+    font-size: var(--body-title-font-size);
+    letter-spacing: var(--body-title-letter-spacing);
+    line-height: var(--body-title-line-height);
+    white-space: nowrap;
+    font-style: var(--body-title-font-style);
+    }
+    .payment .p {
+    position: relative;
+    width: 836px;
+    font-family: var(--body-font-family);
+    font-weight: var(--body-font-weight);
+    color: #000000;
+    font-size: var(--body-font-size);
+    letter-spacing: var(--body-letter-spacing);
+    line-height: var(--body-line-height);
+    font-style: var(--body-font-style);
+    }
+    .payment .button {
+    all: unset;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 25px 70px;
+    position: absolute;
+    top: 700px;
+    left: 850px;
+    border-radius: 30px;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgb(148.29, 188.01, 225.25) 0%, rgb(189, 224, 254) 100%);
+    }
+    .payment .text-wrapper-5 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--title-font-family);
+    font-weight: var(--title-font-weight);
+    color: #ffffff;
+    font-size: var(--title-font-size);
+    letter-spacing: var(--title-letter-spacing);
+    line-height: var(--title-line-height);
+    white-space: nowrap;
+    font-style: var(--title-font-style);
+    }
