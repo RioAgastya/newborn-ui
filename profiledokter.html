@@ -55,7 +55,7 @@
                 <button class="share-button">
                     <span class="icon">&#x1F4E2;</span> Share 
                 </button>
-                <button class="consult-button">
+                <button class="consult-button" id="btnKonsultasi">
                     Konsultasi
                 </button>
 
@@ -70,7 +70,7 @@
                       Ini memungkinkan saya untuk memberikan perawatan holistik dan merinci diagnosis dengan presisi.
                       Selalu terbuka terhadap kemajuan medis terbaru, saya berusaha untuk menerapkan inovasi dalam praktek klinis.
                       Hal ini bertujuan untuk memastikan bahwa setiap pasien mendapatkan perawatan yang sesuai dengan standar terkini.
-                     Saya percaya bahwa hubungan yang baik antara dokter dan pasien adalah kunci keberhasilan perawatan. 
+                      Saya percaya bahwa hubungan yang baik antara dokter dan pasien adalah kunci keberhasilan perawatan. 
                       Saya berusaha untuk menciptakan lingkungan yang mendukung dan ramah, di mana setiap pasien merasa didengar dan dipahami.
                     </p>
                   </div>
@@ -96,6 +96,13 @@
       if (buttonContainer) {
         buttonContainer.addEventListener("click", function (e) {
           window.location.href = "index.html";
+        });
+      }
+
+      var buttonContainer = document.getElementById("btnKonsultasi");
+      if (buttonContainer) {
+        buttonContainer.addEventListener("click", function (e) {
+          window.location.href = "payment.html";
         });
       }
     </script>

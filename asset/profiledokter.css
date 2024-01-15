@@ -133,6 +133,11 @@
   margin-top: 150px;
   margin-left: -300px;
 }
+
+.translucent-wrapper h3 {
+  padding-bottom: 20px;
+}
+
   .flower-1 {
     position: absolute;
     background: none;

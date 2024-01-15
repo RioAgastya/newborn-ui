@@ -124,7 +124,7 @@
     }
     .payment .total-tagihan {
     flex-direction: column;
-    height: 200px;
+    height: 250px;
     gap: 36px;
     padding: 26px 46px;
     background-color: #ffffff;
@@ -246,7 +246,7 @@
     gap: 10px;
     padding: 25px 70px;
     position: absolute;
-    top: 700px;
+    top: 750px;
     left: 850px;
     border-radius: 30px;
     overflow: hidden;
